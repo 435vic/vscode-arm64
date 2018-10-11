@@ -1,0 +1,26 @@
+matrix:
+  include:
+    - os: linux
+      sudo: required
+
+language: node_js
+nodejs: "8"
+
+before_install:
+  - ./install_deps.sh
+  - . get_repo.sh
+
+script:
+  - ./build.sh
+
+deploy:
+  provider: releases
+  skip_cleanup: true
+  overwrite: true
+  name: $LATEST_MS_TAG
+  api_key: $GITHUB_TOKEN
+  file_glob: true
+  file:
+    - vscode/.build/linux/deb/arm64/deb/*.deb
+  on:
+    all_branches: true
