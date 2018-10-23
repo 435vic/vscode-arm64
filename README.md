@@ -5,7 +5,8 @@ vscode build example on Travis CI
 
 * Required dependencies are installed
 * The repo is cloned with `git clone https://github.com/microsoft/vscode`
-* The variable `npm_config_arch` is set to `arm`
+* yarn is updated to 1.10.1
+* The variable `npm_config_arch` is set to `arm64`
 * `yarn` is run
 * `yarn run gulp vscode-linux-arm64-min` is run
 * `yarn run gulp vscode-linux-arm64-build-deb` is run
