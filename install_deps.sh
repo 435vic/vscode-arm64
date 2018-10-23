@@ -6,6 +6,8 @@ curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 # Update yarn
 # npm update -g yarn
+# remove existing yarn install
+npm uninstall -g yarn
 sudo apt-get update
 sudo apt-get install yarn
 echo "=========  YARN WAS UPDATED  ========="
