@@ -13,7 +13,8 @@ echo "======== Setting up qemu rootfs... ========"
 sudo qemu-debootstrap --arch=arm64 --variant=minbase xenial rootfs
 echo "Done."
 echo "Installing libraries on chroot..."
-sudo chroot rootfs apt-get update && apt-get install -y libx11-dev
+sudo chroot rootfs apt-get update 
+sudo chroot rootfs apt-get install -y libx11-dev
 echo "Done."
 # Set up target toolchain for arm64
 export CC=/usr/bin/cc
