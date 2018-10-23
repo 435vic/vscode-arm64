@@ -14,6 +14,9 @@ before_install:
   - ./install_deps.sh
   - . get_repo.sh
 
+cache:
+  yarn: true
+
 script:
   - ./build.sh
 
