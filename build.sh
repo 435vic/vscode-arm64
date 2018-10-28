@@ -14,6 +14,7 @@ yarn run gulp vscode-linux-arm64-min
 yarn run gulp vscode-linux-arm64-build-deb
 
 # Zip
-cd VSCode-linux-arm64
+ls -la
+cd ../VSCode-linux-arm64
 tar czf ../VSCode-linux-arm64-${LATEST_MS_TAG}.tar.gz .
 
