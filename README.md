@@ -1,5 +1,7 @@
 # vscode-arm64
+[![Build Status](https://travis-ci.com/435vic/vscode-arm64.svg?branch=master)](https://travis-ci.com/435vic/vscode-arm64)  
 vscode build example on Travis CI
+
 
 ## What is done when the job starts in Travis CI?
 
