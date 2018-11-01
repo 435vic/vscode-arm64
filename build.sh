@@ -9,7 +9,7 @@ export CXX="$(which arm-linux-gnueabihf-g++) -L$(pwd)/rootfs/usr/lib/arm-linux-g
 export npm_config_arch=arm64
 echo > build/npm/preinstall.js
 export npm_config_target="$(grep target .yarnrc | sed 's/[^0-9.]*//g')"
-npm install --target_arch=armh64
+npm install --target_arch=arm64
 
 yarn run gulp vscode-linux-arm64-min
 yarn run gulp vscode-linux-arm64-build-deb
