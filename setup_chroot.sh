@@ -1,0 +1,2 @@
+sudo apt-get install qemu qemu-user-static debootstrap gcc-arm-linux-gnueabihf g++-arm-linux-gnueabihf
+sudo qemu-debootstrap --arch=arm64 --variant=minbase xenial rootfs
