@@ -3,10 +3,10 @@ set -e
 
 cd vscode
 
-export CC=$(which arm-linux-gnueabihf-gcc)
-export CXX="$(which arm-linux-gnueabihf-g++) -L$(pwd)/rootfs/usr/lib/arm-linux-gnueabihf/"
+export CC=cc
+export CXX=c++
 
-export npm_config_arch=arm
+export npm_config_arch=arm64
 
 yarn
 yarn run gulp vscode-linux-arm-min
