@@ -9,6 +9,7 @@ before_install:
   - export PATH="$HOME/.yarn/bin:$PATH" 
   - ./install_deps.sh
   - . get_repo.sh
+  - . setup_chroot.sh
 
 cache:
   yarn: true
