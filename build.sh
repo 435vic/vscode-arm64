@@ -7,7 +7,7 @@ export CC=cc
 export CXX=c++
 
 export npm_config_arch=arm64
-export npm_target_arch=arm64
+export npm_config_target_arch=arm64
 
 yarn
 yarn run gulp vscode-linux-arm64-min
