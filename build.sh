@@ -8,6 +8,7 @@ export CXX="$(which arm-linux-gnueabihf-g++) -L$(pwd)/rootfs/usr/lib/arm-linux-g
 
 export npm_config_arch=arm
 
+yarn
 yarn run gulp vscode-linux-arm-min
 yarn run gulp vscode-linux-arm-build-deb
 
