@@ -3,6 +3,9 @@ set -e
 
 cd vscode
 
+export CC=$(which arm-linux-gnueabihf-gcc)
+export CXX="$(which arm-linux-gnueabihf-g++) -L$(pwd)/rootfs/usr/lib/arm-linux-gnueabihf/"
+
 export npm_config_arch=arm64
 
 yarn
